@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta charset="utf-8" http-equiv="Content-Type" content="text/html">
+	<title>聊天页面</title>
+	<link rel="stylesheet" type="text/css" href="resources/css/index.css">
+	<script type="text/javascript" src="../lib/jquery/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="../lib/jquery/jquery.i18n.properties.js"></script>
+</head>
+<body>
+	<h2 class="i18n-text page-title" data-text="pagetitle_str"></h2>
+	<div class="dialog-box">
+		<div class="dialog-mark">
+			<div class="new-chat">
+				<form class="new-chat-form" action="">
+					<div class="inputline">
+						<label class="i18n-text" data-text="sfid_str"></label>
+						<input type="number" name="sfid" placeholder="1-6">
+					</div>
+					<div class="inputline">
+						<label class="i18n-text" data-text="fid_str"></label>
+						<input type="number" name="fid" placeholder="1-6">
+					</div>
+					<div class="form-btn init-btn">
+						<button id="init_fid_btn" class="i18n-text" data-text="newchat_str"></button>
+					</div>
+					<div class="form-btn new-btn" style="display: none;">
+						<button id="new_fid_btn" class="i18n-text" data-text="newchat_str"></button>
+						<button id="new_fid_btn_cancel" class="i18n-text" data-text="cancel_str"></button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="dialog-box-body">
+			<div class="dialog-left">
+				<div class="dialog-left-head"></div>
+				<div class="dialog-left-body">
+					<div class="chat-list">
+						<ul class="left-list">
+							
+						</ul>
+					</div>
+				</div>
+				<div class="dialog-left-foot"></div>
+			</div>
+			<div class="dialog-right">
+				<div class="dialog-box-title">
+					<div class="title-left"></div>
+					<div class="title-right">
+						<span class="btn new" title="new">
+							<i>+</i>
+						</span>
+						<span class="btn min" title="min">
+							<i></i>
+						</span>
+						<span class="btn max" title="max">
+							<i></i>
+						</span>
+						<span class="btn closex" title="close">
+							<i>x</i>
+						</span>
+					</div>
+				</div>
+				<div class="dialog-right-chat-rel">
+					<div class="dialog-right-head">
+						<div class="chat-info-head">
+							<div class="user-info-head">
+								<img src="">
+								<span class="user-desc"></span>
+							</div>
+						</div>
+					</div>
+					<div class="dialog-right-body">
+						
+					</div>
+					<div class="dialog-right-foot">
+						<div class="chat-input">
+							<textarea  resize="no" id="chat_input"></textarea>
+						</div>
+						<div class="chat-btn" title="send" id="chat_send_btn">
+							<img src="resources/img/send.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="embed-form">
+		<div class="container">
+			<img class="embed-right-icon" src="resources/img/right.png">
+			<form class="input">
+				<div class="inputline">
+					<label>模拟发送者ID</label>
+					<input type="text" name="embedsendid" placeholder="1-6">
+				</div>
+				<div class="inputline">
+					<label>模拟接收者ID</label>
+					<input type="text" name="embedreceid" placeholder="1-6">
+				</div>
+				<div class="inputtext">
+					<label>发送内容</label>
+					<textarea id="embed_text" resize="no">
+						
+					</textarea>
+					
+				</div>
+				<div class="form-btn">
+					<button id="em_submit">发送</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="define.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="work.js"></script>
+</body>
+</html>
