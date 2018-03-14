@@ -1,0 +1,337 @@
+/**Common start**/
+ul {margin: 0;padding: 0;}
+/**Common end**/
+.page-title {text-align: center;}
+
+/*** dialog start ***/
+.dialog-box {
+	width: 80%;
+	height: auto;
+	min-height: 450px;
+	min-width: 400px;
+	border: 1px solid #e8e8e8;
+	margin: auto;
+	box-shadow: -3px 4px 10px -1px rgba(189,189,189,0.8);
+	overflow: hidden;
+	position: relative;
+}
+
+.dialog-box-title {
+	width: 100%;
+	height: 30px;
+}
+
+.dialog-box-body {
+	height: auto;
+	min-height: 542px;
+	overflow-y: auto;
+}
+.title-right {
+	width: auto;
+	float: right;
+	margin-right: 15px;
+}
+
+.title-right span{
+	width: 10px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.btn.new i {
+
+}
+.btn.min i {
+	display: inline-block;
+	width: 10px;
+	height: 0;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	vertical-align: middle;
+}
+
+.btn.max i {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border:1px solid #000;
+}
+
+.btn.closex i {
+	
+}
+
+.dialog-box-body > div {
+	display: inline-block;
+}
+
+.dialog-left {
+	width: 20%;
+	height: 100%;
+	vertical-align: top;
+}
+
+.dialog-left-body {
+	overflow-y: auto;
+}
+
+.dialog-right {
+	height: auto;
+	min-height: 542px;
+	border-left: 1px solid #e8e8e8;
+	width: 79%;
+	position: relative;	
+}
+
+.dialog-right-head {
+	position: absolute;
+	top: 2px;
+}
+
+.dialog-right-body {
+	margin-top: 20px;
+	padding-left: 10px;
+	overflow: auto;
+}
+
+.dialog-right-body .chat-panel{
+	width: 100%;
+	height: 400px;
+	min-height: 400px;
+	overflow: auto;
+	border-bottom: 1px solid #e8e8e8;
+	border-top: 1px solid #e8e8e8;
+}
+
+.chat-text-list {
+	margin-top: 10px;
+}
+
+.chat-text-list.panel-right {
+	float: right;
+}
+
+.chat-text-list.panel-right .user-info {
+	float: right;
+}
+
+.dialog-right-body .user-info {
+	vertical-align: top;
+}
+
+.dialog-right-body .panel-left .user-info {
+	margin-right: 14px;
+}
+
+.dialog-right-body .panel-right .user-info {
+	margin-left: 14px;
+}
+.chat-list-line {
+	overflow: hidden;
+	height: auto;
+}
+
+.chat-list ul {
+	list-style: none;
+}
+
+.chat-list ul li {
+	padding: 10px 5px 5px 15px;
+	border-top: 1px solid #e8e8e8;
+	cursor: pointer;
+	height: 30px;
+	line-height: 30px;
+}
+
+.chat-list ul li img {
+	border-radius: 50%;
+	vertical-align: bottom;
+}
+
+.chat-list ul li:hover {
+	background-color: rgba(189,189,189,.3);
+}
+
+.chat-list ul li.active {
+	background-color: rgba(189,189,189,.4);
+}
+
+.dialog-right-foot {
+	min-height: 90px;
+	overflow-y: auto;
+	position: relative;
+}
+
+.dialog-right-foot > div {
+	display: inline-block;
+}
+.chat-input {
+	width: 100%;
+	height: 100%;
+	
+}
+.chat-input textarea {
+	width: 100%;
+	padding-right: 50px;
+	resize: none;
+	margin: 0;
+	border: none;
+	padding: 5px 10px;
+	min-height: 80px;
+	height: auto;
+	font-size: 1.2rem;
+	box-sizing: border-box;
+}
+
+.chat-input textarea:focus {
+	outline: none;
+}
+
+.chat-btn {
+	position: absolute;
+	bottom: 5px;
+	right: 18px;
+}
+.chat-btn img {
+	width: 30px;
+	height: auto;
+	cursor: pointer;
+	opacity: 0.7;
+}
+.chat-btn img:hover {
+	opacity: 1;
+}
+
+.chat-text-list > div {
+	display: inline-block;
+}
+
+.chat-text-list .chat-text-panel {
+	background: #e8e8e8;
+	border-radius: 12px;
+	padding: 3px 6px
+}
+/*** dialog end ***/
+
+/*** dialog mark start*/
+.dialog-mark {
+	 width: 100%;
+	 min-height: 546px;
+	 height: 546px;
+	 background: #000;
+	 opacity: 0.4;
+	 position: absolute;
+	 z-index: 10;
+}
+.new-chat {
+	height: 100%;
+	width: 100%;
+	display:flex;
+}
+
+.new-chat form {
+	width: 50%;
+	height: 20%;
+	min-height: 150px;
+	margin: auto;
+	background: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+.new-chat form > div {
+	margin-top: 20px;
+	width: 60%;
+	margin: 20px auto 5px;
+}
+
+.inputline {
+	text-align: left;
+}
+
+.form-btn {
+	text-align: center;
+}
+
+.inputline label {
+	width: 30%;
+	display: inline-block;
+}
+.new-chat form button {
+	font-weight: bold;
+	padding: 6px 15px;
+	border-radius: 20px;
+	background: #0057be;
+	min-width: 80px;
+}
+
+#new_fid_btn {
+	margin-right: 15px;
+}
+/*** dialog mark end*/
+
+/***embed form start***/
+.embed-form {
+	position: fixed;
+	width: 50%;
+	min-height: 548px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: #fcfcfc;
+    opacity: 1;
+    z-index: 11;
+}
+
+.embed-form form {
+	width: 100%;
+	height: 100%;
+	padding: 60px 20px 20px 60px;
+
+}
+
+.embed-form .inputline {
+	margin: 50px auto;
+}
+
+.embed-form .form-btn {
+	text-align: left;
+}
+
+.embed-right-icon {
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.embed-right-icon:hover {
+	opacity: 1;
+}
+
+#embed_text {
+	width: 100%;
+	height: 90px;
+	resize: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#em_submit {
+	padding: 5px 10px;
+}
+
+.embed-panel-hide {
+	width: 34px;
+	transition: width 1s;
+}
+
+.embed-panel-show {
+	width: 50%;
+	transition: width 1s;
+}
+
+.embed-panel-hide .embed-right-icon {
+	transform: rotateY(180deg);
+}
+/***embed form end***/
